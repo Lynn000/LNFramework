@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LNTabBarController.h
 //  LNFramework
 //
 //  Created by cong on 16/7/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LNTabBarController : UITabBarController
 
 @end
-
