@@ -27,6 +27,8 @@
         // 设置自定义tabBar按钮的点击事件
         
     }];
+    
+    [self setValue:tabBar forKey:@"tabBar"];
 }
 
 // MARK : - 添加子控制器

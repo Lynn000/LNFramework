@@ -52,7 +52,13 @@ NSInteger const btnCount = 5;
     
 }
 
-
+#pragma mark - 按钮事件
+- (void)customBtnClick{
+    
+    if (self.btnBlock) {
+        self.btnBlock();
+    }
+}
 
 
 #pragma mark - 构造方法
@@ -71,6 +77,8 @@ NSInteger const btnCount = 5;
     UIButton *customBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     // 设置按钮样式
+    customBtn.backgroundColor = [UIColor redColor];
+    [customBtn addTarget:self action:@selector(customBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:customBtn];
     
